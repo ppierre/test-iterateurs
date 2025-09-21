@@ -79,6 +79,11 @@ const descriptions = penguins.slice(0, 3).map(p =>
 console.log("• map() - Descriptions des 3 premiers:");
 descriptions.forEach(desc => console.log("  ", desc));
 
+/* IMPORTANT : noter ce code 
+ * L'usage de `map` pour n'extraire qu'une propriété.
+ * Et l'usage de `[...new Set()]` sur le résultat pour ne garder que les noms uniques
+ * Cela servira pour le prochain TP
+ */
 const nomsEspeces = penguins.map(/* TODO */);
 console.log("• map() - Espèces uniques:", [...new Set(nomsEspeces)]);
 
